@@ -132,6 +132,7 @@ export const PRICING_PLANS = [
     priceUnit: "/dia",
     featured: false,
     badge: null,
+    isCustom: false,
     features: [
       { text: "Internet até 200 Mbps", included: true },
       { text: "1 antena Starlink", included: true },
@@ -150,6 +151,7 @@ export const PRICING_PLANS = [
     priceUnit: "/3 dias",
     featured: true,
     badge: "Mais popular",
+    isCustom: false,
     features: [
       { text: "Internet até 200 Mbps", included: true },
       { text: "1 antena Starlink", included: true },
@@ -168,6 +170,7 @@ export const PRICING_PLANS = [
     priceUnit: "/semana",
     featured: false,
     badge: "Economia",
+    isCustom: false,
     features: [
       { text: "Internet até 200 Mbps", included: true },
       { text: "1 antena Starlink", included: true },
@@ -186,6 +189,7 @@ export const PRICING_PLANS = [
     priceUnit: "/mês",
     featured: false,
     badge: "Melhor custo",
+    isCustom: false,
     features: [
       { text: "Internet até 200 Mbps", included: true },
       { text: "1 antena Starlink", included: true },
