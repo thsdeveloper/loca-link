@@ -71,7 +71,7 @@ export function Header() {
               className="btn-whatsapp py-2.5 px-5 text-sm"
             >
               <WhatsAppIcon className="w-4 h-4" />
-              Fale no WhatsApp
+              Reservar agora
             </a>
           </div>
 
@@ -114,7 +114,7 @@ export function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <WhatsAppIcon className="w-5 h-5" />
-              Fale no WhatsApp
+              Reservar agora
             </a>
           </nav>
         </div>

@@ -76,33 +76,33 @@ export const HOW_IT_WORKS_STEPS = [
 // Benefícios
 export const BENEFITS = [
   {
-    title: "Internet de verdade",
-    description: "Conexão estável e confiável mesmo em lugares remotos, sem depender de infraestrutura local.",
+    title: "Nunca mais passe vergonha",
+    description: "Chega de WiFi travando na hora da live ou dos stories. Internet estável mesmo em lugares sem cobertura.",
     icon: "globe",
   },
   {
-    title: "Alta velocidade",
-    description: "Velocidades de 100 a 200 Mbps para streaming, lives e múltiplos dispositivos.",
+    title: "Velocidade de verdade",
+    description: "Até 200 Mbps para streaming, lives e centenas de convidados conectados ao mesmo tempo.",
     icon: "zap",
   },
   {
-    title: "Baixa latência",
-    description: "Latência de apenas 20-40ms, ideal para videochamadas e transmissões ao vivo.",
+    title: "Zero travamento em lives",
+    description: "Latência de apenas 20-40ms. Perfeito para videochamadas, transmissões ao vivo e jogos online.",
     icon: "activity",
   },
   {
-    title: "Instalação rápida",
-    description: "Equipamento pronto para uso em minutos, sem complicações técnicas.",
+    title: "Pronto em 5 minutos",
+    description: "Sem técnico, sem complicação. Conecte, aponte pro céu e pronto. Qualquer um consegue instalar.",
     icon: "clock",
   },
   {
-    title: "Cobertura nacional",
-    description: "Funciona em todo o Brasil, de norte a sul, em qualquer tipo de terreno.",
+    title: "Funciona em qualquer lugar",
+    description: "Fazenda, sítio, praia, montanha... Se tem céu, tem internet. Cobertura em todo o Brasil.",
     icon: "map",
   },
   {
-    title: "Suporte dedicado",
-    description: "Equipe técnica disponível durante todo o período de locação.",
+    title: "Suporte na hora H",
+    description: "Problemas no dia do evento? Nossa equipe resolve por WhatsApp ou vai até você se precisar.",
     icon: "headphones",
   },
 ] as const;
@@ -273,6 +273,85 @@ export const FAQ_ITEMS = [
   {
     question: "E se der algum problema durante o evento?",
     answer: "Oferecemos suporte técnico durante todo o período de locação. Em caso de qualquer problema, nossa equipe está pronta para ajudar remotamente ou presencialmente.",
+  },
+  {
+    question: "Posso cancelar ou alterar a reserva?",
+    answer: "Sim! Oferecemos flexibilidade total. Você pode cancelar ou alterar sua reserva com até 48h de antecedência sem custo adicional. Para alterações de última hora, entre em contato que faremos o possível para ajudar.",
+  },
+  {
+    question: "Qual a garantia do equipamento?",
+    answer: "O equipamento é 100% original Starlink e testado antes de cada locação. Em caso de qualquer defeito técnico, substituímos o equipamento sem custo adicional ou devolvemos seu dinheiro.",
+  },
+  {
+    question: "Vocês emitem nota fiscal?",
+    answer: "Sim! Emitimos nota fiscal para todos os serviços de locação. Ideal para empresas e eventos corporativos que precisam de documentação fiscal.",
+  },
+  {
+    question: "Posso pagar parcelado ou via PIX?",
+    answer: "Aceitamos PIX, cartão de crédito (até 3x sem juros), cartão de débito e transferência bancária. Para reservas maiores, oferecemos condições especiais de parcelamento.",
+  },
+] as const;
+
+// Estatísticas de prova social
+export const SOCIAL_PROOF = {
+  eventsCompleted: 127,
+  rating: 4.9,
+  totalReviews: 127,
+  satisfactionRate: 98,
+  kitsAvailable: 5,
+} as const;
+
+// Depoimentos de clientes
+export const TESTIMONIALS = [
+  {
+    id: 1,
+    name: "Carlos Eduardo",
+    role: "Noivo",
+    event: "Casamento",
+    location: "Fazenda Santa Clara, Pirenópolis",
+    avatar: "CE",
+    rating: 5,
+    text: "Nosso casamento foi numa fazenda sem internet. Com o Starlink da LocaLink, fizemos live para família que não pôde vir e os convidados amaram poder postar stories em tempo real!",
+  },
+  {
+    id: 2,
+    name: "Fernanda Almeida",
+    role: "Produtora de Eventos",
+    event: "Festival de Música",
+    location: "Chapada dos Veadeiros",
+    avatar: "FA",
+    rating: 5,
+    text: "Já usei em 3 festivais diferentes. A instalação é super rápida e a internet aguenta centenas de pessoas conectadas. Virou item obrigatório nos meus eventos.",
+  },
+  {
+    id: 3,
+    name: "Roberto Nascimento",
+    role: "Engenheiro Civil",
+    event: "Obra de Construção",
+    location: "Zona Rural de Formosa",
+    avatar: "RN",
+    rating: 5,
+    text: "Precisávamos de internet na obra para enviar projetos e fazer videochamadas. O plano mensal foi perfeito. Instalação em 5 minutos e velocidade excelente.",
+  },
+  {
+    id: 4,
+    name: "Juliana Costa",
+    role: "Influencer",
+    event: "Retiro de Bem-estar",
+    location: "Sítio em Alto Paraíso",
+    avatar: "JC",
+    rating: 5,
+    text: "Organizei um retiro e precisava fazer lives durante o evento. Internet estável, baixa latência, zero travamento. Meus seguidores nem acreditaram que eu estava no meio do mato!",
+  },
+  {
+    id: 5,
+    name: "Marcos Vinícius",
+    role: "Diretor Técnico",
+    event: "Congresso Empresarial",
+    location: "Centro de Convenções Brasília",
+    avatar: "MV",
+    rating: 5,
+    text: "Mesmo com a internet do local, contratamos o Starlink como backup. Foi a melhor decisão - usamos para transmissão principal e funcionou perfeitamente.",
   },
 ] as const;
 

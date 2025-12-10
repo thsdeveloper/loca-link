@@ -1,20 +1,24 @@
-import { TRUST_BADGES } from "@/lib/constants";
+import { TRUST_BADGES, SOCIAL_PROOF } from "@/lib/constants";
 
 export function TrustBadges() {
   return (
-    <section id="confianca" className="section-padding relative">
+    <section id="confianca" className="section-padding relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-background-secondary" />
-      
+
       <div className="container-custom relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 rounded-full bg-primary-700/50 border border-primary-500/30 text-sm text-accent mb-4">
-            Confiança garantida
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-sm text-accent mb-4">
+            <StarIcon className="w-4 h-4" />
+            {SOCIAL_PROOF.rating}★ de {SOCIAL_PROOF.totalReviews} avaliações
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             Por que confiar na LocaLink
           </h2>
+          <p className="text-lg text-foreground-muted max-w-xl mx-auto">
+            Mais de {SOCIAL_PROOF.eventsCompleted} eventos realizados com {SOCIAL_PROOF.satisfactionRate}% de satisfação
+          </p>
         </div>
 
         {/* Trust Badges Grid */}
@@ -57,10 +61,24 @@ export function TrustBadges() {
               </div>
               <span className="text-foreground-muted">Sem burocracia</span>
             </div>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                <CheckIcon className="w-5 h-5 text-accent" />
+              </div>
+              <span className="text-foreground-muted">{SOCIAL_PROOF.eventsCompleted}+ eventos realizados</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+function StarIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+    </svg>
   );
 }
 

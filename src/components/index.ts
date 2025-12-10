@@ -2,6 +2,7 @@ export { Header } from "./Header";
 export { Hero } from "./Hero";
 export { HowItWorks } from "./HowItWorks";
 export { Benefits } from "./Benefits";
+export { Testimonials } from "./Testimonials";
 export { UseCases } from "./UseCases";
 export { Pricing } from "./Pricing";
 export { TrustBadges } from "./TrustBadges";

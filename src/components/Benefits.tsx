@@ -2,11 +2,11 @@ import { BENEFITS } from "@/lib/constants";
 
 export function Benefits() {
   return (
-    <section id="beneficios" className="section-padding relative">
+    <section id="beneficios" className="section-padding relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-background" />
       <div className="absolute inset-0 bg-grid-pattern opacity-30" />
-      
+
       {/* Gradient orbs */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -translate-x-1/2" />
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary-500/10 rounded-full blur-3xl translate-x-1/2" />

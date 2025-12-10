@@ -2,7 +2,7 @@ import { HOW_IT_WORKS_STEPS } from "@/lib/constants";
 
 export function HowItWorks() {
   return (
-    <section id="como-funciona" className="section-padding relative">
+    <section id="como-funciona" className="section-padding relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-background-secondary" />
       <div className="absolute inset-0 bg-dot-pattern opacity-30" />

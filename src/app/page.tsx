@@ -3,6 +3,7 @@ import {
   Hero,
   HowItWorks,
   Benefits,
+  Testimonials,
   UseCases,
   Pricing,
   TrustBadges,
@@ -298,6 +299,7 @@ export default function Home() {
         <Hero />
         <HowItWorks />
         <Benefits />
+        <Testimonials />
         <UseCases />
         <Pricing />
         <TrustBadges />

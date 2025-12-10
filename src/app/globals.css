@@ -67,6 +67,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -74,6 +75,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* Scrollbar customizada */
@@ -119,6 +121,7 @@ a {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -130,6 +133,7 @@ a {
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -137,18 +141,24 @@ a {
 }
 
 @keyframes pulse-glow {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
   }
+
   50% {
     box-shadow: 0 0 40px rgba(34, 197, 94, 0.6);
   }
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -171,11 +181,25 @@ a {
 }
 
 /* Delays de animação */
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
-.delay-400 { animation-delay: 400ms; }
-.delay-500 { animation-delay: 500ms; }
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
 
 /* Gradientes */
 .gradient-radial {
@@ -197,7 +221,7 @@ a {
 
 /* Grid pattern background */
 .bg-grid-pattern {
-  background-image: 
+  background-image:
     linear-gradient(rgba(43, 61, 59, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(43, 61, 59, 0.1) 1px, transparent 1px);
   background-size: 40px 40px;
@@ -326,15 +350,20 @@ a {
 
 /* Flutuação lenta da imagem */
 @keyframes float-slow {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0) rotate(0deg);
   }
+
   25% {
     transform: translateY(-8px) rotate(0.5deg);
   }
+
   50% {
     transform: translateY(-15px) rotate(0deg);
   }
+
   75% {
     transform: translateY(-8px) rotate(-0.5deg);
   }
@@ -346,15 +375,20 @@ a {
 
 /* Inclinação sutil */
 @keyframes subtle-tilt {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
   }
+
   25% {
     transform: perspective(1000px) rotateX(2deg) rotateY(-2deg);
   }
+
   50% {
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
   }
+
   75% {
     transform: perspective(1000px) rotateX(-2deg) rotateY(2deg);
   }
@@ -366,10 +400,13 @@ a {
 
 /* Glow pulsante */
 @keyframes glow-pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.3;
     transform: scale(0.75);
   }
+
   50% {
     opacity: 0.6;
     transform: scale(0.85);
@@ -386,9 +423,11 @@ a {
     transform: scale(0.5) rotate(0deg);
     opacity: 0.2;
   }
+
   50% {
     opacity: 0.4;
   }
+
   100% {
     transform: scale(0.5) rotate(360deg);
     opacity: 0.2;
@@ -404,6 +443,7 @@ a {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -417,6 +457,7 @@ a {
   0% {
     transform: rotate(360deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -430,6 +471,7 @@ a {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -445,12 +487,15 @@ a {
     top: -10%;
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   90% {
     opacity: 1;
   }
+
   100% {
     top: 110%;
     opacity: 0;
@@ -466,6 +511,7 @@ a {
   0% {
     transform: translateX(-100%) skewX(-15deg);
   }
+
   100% {
     transform: translateX(200%) skewX(-15deg);
   }
@@ -477,9 +523,12 @@ a {
 
 /* Badge flutuante */
 @keyframes float-badge {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-5px);
   }
