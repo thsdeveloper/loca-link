@@ -8,12 +8,19 @@ declare global {
 }
 
 // Track WhatsApp click conversion
-export function trackWhatsAppConversion() {
+export function gtagReportConversion(url?: string) {
+    const callback = () => {
+        if (typeof url !== "undefined") {
+            window.location.href = url;
+        }
+    };
+
     if (typeof window !== "undefined" && window.gtag) {
         window.gtag("event", "conversion", {
             send_to: "AW-17794646751/XlymCOeVs88bEN-Fk6VC",
-            value: 1.0,
-            currency: "BRL",
+            event_callback: callback,
         });
     }
+
+    return false;
 }

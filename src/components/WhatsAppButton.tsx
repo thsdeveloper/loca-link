@@ -3,23 +3,7 @@
 import { useState, useEffect } from "react";
 import { WHATSAPP_LINK } from "@/lib/constants";
 
-// Declare gtag for TypeScript
-declare global {
-  interface Window {
-    gtag?: (...args: unknown[]) => void;
-  }
-}
-
-// Google Ads conversion tracking
-function trackWhatsAppConversion() {
-  if (typeof window !== "undefined" && window.gtag) {
-    window.gtag("event", "conversion", {
-      send_to: "AW-17794646751/XlymCOeVs88bEN-Fk6VC",
-      value: 1.0,
-      currency: "BRL",
-    });
-  }
-}
+import { gtagReportConversion } from "@/lib/gtag";
 
 export function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,7 +30,7 @@ export function WhatsAppButton() {
   }, []);
 
   const handleClick = () => {
-    trackWhatsAppConversion();
+    gtagReportConversion();
   };
 
   return (

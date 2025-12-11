@@ -1,7 +1,7 @@
 "use client";
 
 import { WHATSAPP_LINK } from "@/lib/constants";
-import { trackWhatsAppConversion } from "@/lib/gtag";
+import { gtagReportConversion } from "@/lib/gtag";
 
 interface WhatsAppLinkProps {
     children: React.ReactNode;
@@ -10,16 +10,14 @@ interface WhatsAppLinkProps {
 }
 
 export function WhatsAppLink({ children, className, ariaLabel = "Falar no WhatsApp" }: WhatsAppLinkProps) {
-    const handleClick = () => {
-        trackWhatsAppConversion();
-    };
+
 
     return (
         <a
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={handleClick}
+            onClick={() => gtagReportConversion()}
             className={className}
             aria-label={ariaLabel}
         >
